@@ -25,7 +25,9 @@ class IndpEnv
 {
 
     /**
-     * @param string $arg The argument to \TYPO3\CMS\Core\Utility\GeneralUtility::getIndpEnv()
+     * Return the value of a \TYPO3\CMS\Core\Utility\GeneralUtility::getIndpEnv() call
+     *
+     * @param string $arg
      */
     public function get(string $arg): string
     {
