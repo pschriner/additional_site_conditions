@@ -1,0 +1,49 @@
+{
+	"name": "schriner/additional-site-conditions",
+	"type": "typo3-cms-extension",
+    "description": "Additional Site Conditions for TYPO3.",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "site",
+        "conditions"
+    ],
+	"homepage": "https://www.diemedialen.de",
+	"license": [
+        "GPL-2.0-or-later"
+    ],
+	"authors": [{
+		"name": "Patrick Schriner",
+		"role": "Developer"
+	}],
+	"require": {
+		"typo3/cms-core": "^9.5 || ^10.4"
+    },
+    "config": {
+		"vendor-dir": ".Build/vendor",
+		"bin-dir": ".Build/bin"
+	},
+	"extra": {
+		"typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "app-dir": ".Build",
+			"web-dir": ".Build/public",
+			"extension-key": "additional_site_conditions"
+		}
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+        ]
+    },
+	"autoload": {
+		"psr-4": {
+			"Schriner\\AdditionalSiteConditions\\": "Classes/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Schriner\\AdditionalSiteConditions\\Tests\\": "Tests/"
+		}
+    },
+}
