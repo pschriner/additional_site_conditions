@@ -17,7 +17,7 @@ namespace Schriner\AdditionalSiteConditions\ExpressionLanguage;
  */
 
 use TYPO3\CMS\Core\ExpressionLanguage\AbstractProvider;
-use Schriner\AdditionalSiteConditionsExpressionLanguage\ExpressionLanguageVariables\IndpEnv;
+use Schriner\AdditionalSiteConditions\ExpressionLanguage\ExpressionLanguageVariables\IndpEnv;
 
 /**
  * Class SiteConditionProvider
