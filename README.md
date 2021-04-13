@@ -6,7 +6,7 @@ Additional site conditions for the site yml.
 
 Simply install the extension with Composer or the Extension Manager.
 
-`composer require pschriner/additional-site-conditions`
+`composer require schriner/additional-site-conditions`
 
 ## Usage
 
