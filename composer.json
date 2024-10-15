@@ -1,7 +1,7 @@
 {
 	"name": "schriner/additional-site-conditions",
 	"type": "typo3-cms-extension",
-    "description": "Additional Site Conditions for TYPO3.",
+    "description": "Additional Site Conditions for TYPO3. Currently",
     "keywords": [
         "TYPO3",
         "extension",
@@ -17,7 +17,7 @@
 		"role": "Developer"
 	}],
 	"require": {
-		"typo3/cms-core": "^10.4 || ^11.5 || ^12.4 || dev-main"
+		"typo3/cms-core": "^10.4 || ^11.5 || ^12.4 || ^13.4"
     },
     "config": {
 		"vendor-dir": ".Build/vendor",
@@ -31,19 +31,9 @@
 			"extension-key": "additional_site_conditions"
 		}
     },
-    "scripts": {
-        "post-autoload-dump": [
-            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
-        ]
-    },
 	"autoload": {
 		"psr-4": {
 			"Schriner\\AdditionalSiteConditions\\": "Classes/"
 		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"Schriner\\AdditionalSiteConditions\\Tests\\": "Tests/"
-		}
-    }
+	}
 }
